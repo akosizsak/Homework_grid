@@ -1,0 +1,49 @@
+
+
+  .summary {
+      width: 850px;
+      margin: 50px;
+  }
+  .wrap {
+      max-width: 100%;
+  }
+
+.info-1, .info-2, .info-3, .info-4, .info-5, .info-6 {
+    display: flex;
+    background-color: #b8e986;
+    width: 150px;
+    height: 150px;
+}
+
+.summary-section {
+    display: grid;
+    grid-template-columns: (4, 150px);
+    grid-gap: 40px;
+    grid-template-areas:
+        "first second third fourth"
+        "fifth none none sixth"
+        }
+
+.info-1 {
+    grid-area: first;
+}
+
+.info-2 {
+    grid-area: second;
+}
+
+.info-3 {
+    grid-area: third;
+}
+
+.info-4 {
+    grid-area: fourth;
+}
+
+.info-5 {
+    grid-area: fifth;
+}
+
+.info-6 {
+    grid-area: sixth;
+}
